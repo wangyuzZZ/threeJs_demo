@@ -1,0 +1,43 @@
+body,
+html,
+#app {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: rgba($color: #000000, $alpha: .8);
+    min-width: 1100px;
+    overflow: hidden;
+    /*no*/
+}
+
+body {
+    // background: radial-gradient(#316375 0%, #094c64 100%);
+    // background-image: url('../images/banner.png');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: 50%,50%;
+    // background: radial-gradient(#1A5970 0%, #000 100%)
+}
+
+.app-container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.scrollbar-overflow {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+/*隐藏滚动条兼容谷歌*/
+.scrollbar-overflow::-webkit-scrollbar {
+    display: none; //兼容谷歌
+}
+
+/*隐藏滚动条兼容IE10+,兼容火狐*/
+.scrollbar-overflow {
+    scrollbar-width: none; //兼容火狐
+    -ms-overflow-style: none; //兼容IE10
+}
